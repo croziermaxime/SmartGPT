@@ -2,3 +2,4 @@ llama-index
 langchain
 streamlit
 presidio-anonymizer
+openai
