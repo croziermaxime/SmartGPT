@@ -1,7 +1,5 @@
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
-
 import streamlit as st
 from llama_index import download_loader
 from llama_index.node_parser import SimpleNodeParser
