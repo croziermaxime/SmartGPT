@@ -1,7 +1,5 @@
 import os
 
-os.environ["openai_secret_key"] == st.secrets["openai_secret_key"]
-
 import streamlit as st
 from llama_index import download_loader
 from llama_index.node_parser import SimpleNodeParser
@@ -10,6 +8,9 @@ from llama_index import LLMPredictor, GPTVectorStoreIndex, PromptHelper, Service
 from langchain import OpenAI
 from presidio_anonymizer import AnonymizerEngine
 from presidio_anonymizer.entities import RecognizerResult, OperatorConfig, OperatorResult
+
+
+os.environ["openai_secret_key"] == st.secrets["openai_secret_key"]
 
 doc_path = './data/'
 index_file = 'index.json'
