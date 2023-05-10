@@ -12,9 +12,6 @@ from langchain import OpenAI
 from presidio_anonymizer import AnonymizerEngine
 from presidio_anonymizer.entities import RecognizerResult, OperatorConfig, OperatorResult
 
-
-openai.api_key == st.secrets["openai_api_key"]
-
 doc_path = './data/'
 index_file = 'index.json'
 
