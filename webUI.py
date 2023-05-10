@@ -1,7 +1,5 @@
 import os
 
-os.environ["OPENAI_API_KEY"] = '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'
-
 import streamlit as st
 import openai
 from llama_index import download_loader
@@ -11,6 +9,9 @@ from llama_index import LLMPredictor, GPTVectorStoreIndex, PromptHelper, Service
 from langchain import OpenAI
 from presidio_anonymizer import AnonymizerEngine
 from presidio_anonymizer.entities import RecognizerResult, OperatorConfig, OperatorResult
+
+
+openai.api_key == st.secrets["OPENAI_API_KEY"]
 
 doc_path = './data/'
 index_file = 'index.json'
