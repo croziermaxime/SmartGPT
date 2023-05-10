@@ -1,5 +1,7 @@
 import os
 
+os.environ["openai_secret_key"] == st.secrets["openai_secret_key"]
+
 import streamlit as st
 from llama_index import download_loader
 from llama_index.node_parser import SimpleNodeParser
