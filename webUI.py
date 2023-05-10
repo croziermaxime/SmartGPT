@@ -1,5 +1,7 @@
 import os
 
+os.environ["OPENAI_API_KEY"] = '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'
+
 import streamlit as st
 import openai
 from llama_index import download_loader
