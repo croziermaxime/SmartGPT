@@ -11,7 +11,7 @@ from presidio_anonymizer import AnonymizerEngine
 from presidio_anonymizer.entities import RecognizerResult, OperatorConfig, OperatorResult
 
 
-os.environ["OPENAI_API_KEY"] == st.secrets["openai_api_key"]
+openai.api_key = st.secrets["openai_api_key"]
 
 doc_path = './data/'
 index_file = 'index.json'
