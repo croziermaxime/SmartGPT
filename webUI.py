@@ -1,7 +1,6 @@
 import os
-
-import streamlit as st
 import openai
+import streamlit as st
 from llama_index import download_loader
 from llama_index.node_parser import SimpleNodeParser
 from llama_index import GPTVectorStoreIndex
@@ -10,8 +9,7 @@ from langchain import OpenAI
 from presidio_anonymizer import AnonymizerEngine
 from presidio_anonymizer.entities import RecognizerResult, OperatorConfig, OperatorResult
 
-
-openai.api_key = st.secrets["openai_api_key"]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 doc_path = './data/'
 index_file = 'index.json'
